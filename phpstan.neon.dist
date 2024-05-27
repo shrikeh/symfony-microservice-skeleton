@@ -1,7 +1,0 @@
-parameters:
-  level: 6
-  paths:
-  - "src/App"
-  - "src/Api"
-  - "src/Infra"
-  - "src/Domain"

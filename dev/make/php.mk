@@ -1,10 +1,10 @@
 #!make
 
 .build-dir:
-	bash -c "[[ -f ./build ]] || mkdir ./build";
+	bash -c "[[ -d ./build ]] || mkdir ./build";
 
 .composer-%: .build-dir
-	docker compose run --entrypoint="composer $*" "${APP_CONTAINER}";
+	docker compose run --remove-orphans --entrypoint="composer $*" "${APP_CONTAINER}";
 
 install:
 	$(MAKE) .composer-install;

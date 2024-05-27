@@ -34,7 +34,6 @@ RUN ${LOCAL_BIN_PATH}/composer install --no-dev
 FROM base as app
 ARG LOCAL_BIN_PATH=/usr/local/bin
 
-
 COPY --from=composer:latest /usr/bin/composer "${LOCAL_BIN_PATH}/composer"
 RUN chmod +x "${LOCAL_BIN_PATH}/composer"
 

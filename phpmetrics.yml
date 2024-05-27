@@ -1,10 +1,10 @@
 ---
 composer: true  # Analyse the composer.* files
 includes:  #  directory and files to analyze, relative to config file directory
-  - "src/App"
-  - "src/Api"
-  - "src/Infra"
-  - "src/Domain"
+  - "app/src/App"
+  - "app/src/Api"
+  - "app/src/Infra"
+  - "app/src/Domain"
 excludes: # regex of files (or directory) to exclude from analyze
   - tests
 extensions: # default: ["php", "inc"]

@@ -24,7 +24,7 @@ final readonly class Constants
 
     public static function srcDir(): string
     {
-        return self::rootDir() . '/src';
+        return self::rootDir() . '/app/src';
     }
 
     public static function fixturesDir(): string

@@ -15,7 +15,7 @@ ifneq (,$(wildcard './.env'))
 -include .env;
 endif
 
-APP_CONTAINER:=app-common
+APP_CONTAINER:=app
 
 -include dev/make/php.mk
 
